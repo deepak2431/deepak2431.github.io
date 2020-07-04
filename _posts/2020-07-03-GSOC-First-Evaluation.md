@@ -62,5 +62,8 @@ As I mentioned I have during the first evaluation coding period I have implement
 
 I will further work on the implementation of multiple datasets to division memory games activity and other memory activities. As our project is moving to Gitlab now by the KDE administrator so I will be pushing all of my further works there only on the respective branch of the activity.
 
+Regards<br>
+Deepak Kumar
+
 
 
