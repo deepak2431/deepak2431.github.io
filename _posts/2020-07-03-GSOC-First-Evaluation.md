@@ -22,7 +22,7 @@ Until now, I have implemented the multiple datasets in the following activities:
 
 ### Enumeration memory game
 
-In this activity, the child needs to turn the cards to count the images and match with the corresponding number cards. I started my work of implementing multiple datasets to memory activities with this activity. To do this I needed to change the logic of the code to support both the default datasets and the multiple datasets. I made the required changes to the code and after implementing multiple datasets there was an issue in case of just two images so I updated the condition which checks that the resources of images, sounds, texts are enough to load a particular level or not. There is a total of 8 multiple datasets for this activity. <br>
+In this activity, the child needs to turn the cards to count the images and match with the corresponding number cards. I started my work of implementing multiple datasets to memory activities with this activity. To do this I needed to change the logic of the code to support both the default datasets and the multiple datasets. I made the required changes to the code and added multiple datasets to enumeration memory game activity. After implementing multiple datasets there was an issue in case of just two pairs the level doesn't gets loaded. To fix this I updated the condition which checks that the resources of images, sounds, texts are enough to load a particular level or not. There is a total of 8 multiple datasets for this activity. <br>
 Below image shows the dataset screen for Enumeration memory game activity
 
 ![enumeration-multiple-datasets](https://user-images.githubusercontent.com/66898390/86505756-55edd880-bde6-11ea-86e4-88a3d73ff9aa.png)
@@ -31,7 +31,7 @@ After implementing multiple datasets for this activity there was a regression th
 
 ### Addition memory game
 
-In this activity, the child needs to turn the cards to match an addition and its result, until all the cards are gone. The goal of this activity is to practice addition. After the implementation of multiple datasets for enumeration memory games it's not that difficult to add multiple datasets for other memory activities as we just need to create different Data.qml files in the resource directory and load the datasets. For this activity we need to use the function getAddTable() implemented in math_util.js and pass the arguments for the respective numbers. In this activity there is a total of 10 multiple datasets. This activity has two mode as a second mode "with Tux" so I have implemented multiple datasets for this too. The dataset content of the activity Addition memory games with Tux is the same as without Tux. Once I have implemented the datasets for both modes, I made a merge request from my working branch.
+In this activity, the child needs to turn the cards to match an addition and its result, until all the cards are gone. The goal of this activity is to practice addition. After the implementation of multiple datasets for enumeration memory games it's not that difficult to add multiple datasets for other memory activities. We just need to create different Data.qml files in the resource directory and load the datasets. For this activity we need to use the function getAddTable() implemented in math_util.js and pass the arguments for the respective numbers. In this activity there is a total of 10 multiple datasets. This activity has two mode as a second mode "with Tux" so I have implemented multiple datasets for this too. The dataset content of the activity Addition memory games with Tux is the same as without Tux. Once I have implemented the datasets for both modes, I made a merge request from my working branch.
 
 Code of Data.qml file 
 
@@ -76,7 +76,7 @@ Below image shows the datasets screen for Multiplication memory game activity
 
 ### What's next?
 
-I will further work on the implementation of multiple datasets to division memory games activity and other memory activities. As our project is moving to KDE Gitlab instance. I will be push all of my further work there only on a different git branch for each activity group
+I will further work on the implementation of multiple datasets to division memory games activity and other memory activities. As our project is moving to KDE Gitlab instance. I will push all of my further work there only on a different git branch for each activity group.
 
 Regards<br>
 Deepak Kumar
